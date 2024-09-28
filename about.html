@@ -1,37 +1,77 @@
 <html>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我是誰??</title>
-    
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <div id="app">
         <h1>關於我</h1>
 
-        <h2>基本訊息</h2>
+        <section>
+            <h2>基本訊息</h2>
+            <div id="pht">
+                <img src="自我介紹的照片.jpg" width="300" height="400" alt="自我介紹的照片">
+            </div>
+            <ul>
+                <li>姓名: 張安琪</li>
+                <li>綽號: 小7</li>
+                <li>年齡: 20</li>
+                <li>學歷:</li>
+            </ul>
+            <ol>
+                <li>尖山國小</li>
+                <li>文英國中</li>
+                <li>苗栗高中</li>
+                <li>淡江大學</li>
+            </ol>
+            <ul>
+                <li>興趣: 跳舞、打羽毛球、拍照、旅行、游泳</li>
+                <li>聯絡方式: 411631111@o365.tku.edu.tw</li>
+            </ul>
+        </section>
 
-        <p>姓名: 張安琪</p>
-        <p>綽號: 小7</p>
-        <p>學歷:</p>
-        <ol>
-            <li>尖山國小</li>
-            <li>文英國中</li>
-            <li>苗栗高中</li>
-            <li>淡江大學</li>
-        </ol>
-        <p>年齡: 20</p>
-        <p>興趣: 跳舞、打羽毛球</p>
+        <section>
+            <h2>自我敘述</h2>
+            <p>
+                目前就讀淡江大學三年級資管系，想當初自己誤打誤撞就進入了自己完全不了解的科系，沒想到<br>
+                就默默地讀了三年，只能感嘆時間過得飛逝，再也不是懵懵懂懂的大一生了，原本對程式真的完<br>
+                全提不起興趣，但最近發現網頁設計很有趣，有點想往這方面多學習，因為有別於之前所學習的<br>
+                程式，學習 HTML 的過程一點都不枯燥乏味，很有趣!
+            </p>
+        </section>
 
-        <h2>自我敘述</h2>
-        <p>
-            哈囉，目前一個人住在淡水，跟我是有合租在一間小套房，雖然很擠但因為有他<br>
-            所以生活變得很快樂，他長得很可愛喔!! 等等在底下附一張照片送給你們。
-        </p>
+        <section>
+            <h2>!! 給大家欣賞我家的貓咪!!</h2>
+            <div id="pht">
+                <img src="hana照片上課用.jpg" width="300" height="400" alt="我家的貓咪">
+            </div>
+            <a href="https://www.instagram.com/hanatoosay_?igsh=dHczcWthbjlrcGZi">貓咪 IG 連結</a>
+            <strong>
+                <h3>4不4很可愛</h3>
+            </strong>
 
-        <div id="pht">
-            <img src="hana照片上課用.jpg" width="300" height="400" alt="我室友">
-        </div>
-        <a href="https://www.instagram.com/hanatoosay_?igsh=dHczcWthbjlrcGZi">室友ig連結</a>
+            <table>
+                <tr>
+                    <th>名稱</th>
+                    <th>年齡</th>
+                </tr>
+                <tr>
+                    <td>hana</td>
+                    <td>3個月</td>
+                </tr>
+            </table>
+
+            <form action="/submit" method="post">
+                <label for="name">歡迎大家誇獎 hana</label>
+                <input type="text" id="name" name="name">
+                <input type="submit" value="提交">
+            </form>
+        </section>
     </div>
 </body>
+
 </html>
