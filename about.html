@@ -14,56 +14,80 @@
         <section>
             <h2>基本訊息</h2>
             <div id="pht">
-                <img src="自我介紹的照片.jpg" width="300" height="400" alt="自我介紹的照片">
+                <img src="自我介紹的照片.jpg" alt="自我介紹的照片" class="profile-img">
             </div>
-            <ul>
-                <li>姓名: 張安琪</li>
-                <li>綽號: 小7</li>
-                <li>年齡: 20</li>
-                <li>學歷:</li>
-            </ul>
-            <ol>
-                <li>尖山國小</li>
-                <li>文英國中</li>
-                <li>苗栗高中</li>
-                <li>淡江大學</li>
-            </ol>
-            <ul>
-                <li>興趣: 跳舞、打羽毛球、拍照、旅行、游泳</li>
-                <li>聯絡方式: 411631111@o365.tku.edu.tw</li>
-            </ul>
+            <div id="info-table">
+                <table>
+                    <tr>
+                        <th>項目</th>
+                        <th>內容</th>
+                    </tr>
+                    <tr>
+                        <td>姓名</td>
+                        <td>張安琪</td>
+                    </tr>
+                    <tr>
+                        <td>綽號</td>
+                        <td>小7</td>
+                    </tr>
+                    <tr>
+                        <td>年齡</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>學歷</td>
+                        <td>
+                            <ul>
+                                <li>尖山國小</li>
+                                <li>文英國中</li>
+                                <li>苗栗高中</li>
+                                <li>淡江大學</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>興趣</td>
+                        <td>跳舞、打羽毛球、拍照、旅行、游泳</td>
+                    </tr>
+                    <tr>
+                        <td>聯絡方式</td>
+                        <td>411631111@o365.tku.edu.tw</td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
         <section>
             <h2>自我敘述</h2>
-            <p>
-                目前就讀淡江大學三年級資管系，想當初自己誤打誤撞就進入了自己完全不了解的科系，沒想到<br>
-                就默默地讀了三年，只能感嘆時間過得飛逝，再也不是懵懵懂懂的大一生了，原本對程式真的完<br>
-                全提不起興趣，但最近發現網頁設計很有趣，有點想往這方面多學習，因為有別於之前所學習的<br>
-                程式，學習 HTML 的過程一點都不枯燥乏味，很有趣!
-            </p>
+            <div id="self-description">
+                <p>
+                    目前就讀淡江大學三年級資管系，想當初自己誤打誤撞就進入了自己完全不了解的科系，沒想到<br>
+                    就默默地讀了三年，只能感嘆時間過得飛逝，再也不是懵懵懂懂的大一生了，原本對程式真的完<br>
+                    全提不起興趣，但最近發現網頁設計很有趣，有點想往這方面多學習，因為有別於之前所學習的<br>
+                    程式，學習 HTML 的過程一點都不枯燥乏味，很有趣!
+                </p>
+            </div>
         </section>
 
         <section>
             <h2>!! 給大家欣賞我家的貓咪!!</h2>
-            <div id="pht">
+            <div id="cat-photo">
                 <img src="hana照片上課用.jpg" width="300" height="400" alt="我家的貓咪">
             </div>
-            <a href="https://www.instagram.com/hanatoosay_?igsh=dHczcWthbjlrcGZi">貓咪 IG 連結</a>
-            <strong>
-                <h3>4不4很可愛</h3>
-            </strong>
+            <div id="cat">
+                <strong>
+                    <h3>4不4很可愛</h3>
+                </strong>
 
-            <table>
-                <tr>
-                    <th>名稱</th>
-                    <th>年齡</th>
-                </tr>
-                <tr>
-                    <td>hana</td>
-                    <td>3個月</td>
-                </tr>
-            </table>
+                <a href="https://www.instagram.com/hanatoosay_?igsh=dHczcWthbjlrcGZi">貓咪 IG 連結</a>
+            </div>
+
+            <div id="cat-info">
+                <ul>
+                    <li>名字: Hana</li>
+                    <li>年齡: 3個月</li>
+                </ul>
+            </div>
 
             <form action="/submit" method="post">
                 <label for="name">歡迎大家誇獎 hana</label>
