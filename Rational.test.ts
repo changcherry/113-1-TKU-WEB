@@ -1,17 +1,29 @@
 import { Rational } from './Rational';
 
-const r1 = new Rational(6, 8);
-console.log(`R1: ${r1.toString()}`);  // 應該輸出 6/8
+const main = () => {
+    const R1 = new Rational(6, 4);
+    const R2 = R1.normalize();
+    const R3 = new Rational(12, 4);
+    const R4 = Rational.parseRational(["1", "3"], ["4", "1"]);
+    const R5 = Rational.parseRational("43/23");
 
-const r2 = r1.normalize();
-console.log(`R2: ${r2.toString()}`);  // 應該輸出 3/4
+    console.log(`R1 : ${R1.toString()}`);
+    console.log(`R2 : ${R2.toString()}`);
+    console.log(`R3 : ${R3.toString()}`);
+    console.log();
 
-const r3 = new Rational(12, 4);
-console.log(`R3: ${r3.toString()}`);  // 應該輸出 12/4
+    console.log(`R1.equals(R2) : ${R1.equals(R2)}`);
+    console.log(`R1.isWhole() : ${R1.isWhole()}`);
+    console.log(`R1.isDecimal() : ${R1.isDecimal()}`);
+    console.log();
 
-// 測試 equals 方法
-const r4 = new Rational(3, 4);
-console.log(`R1 等於 R4: ${r1.equals(r4)}`);  // 應該輸出 false
-console.log(`R2 等於 R4: ${r2.equals(r4)}`);  // 應該輸出 true
+    console.log(`R1.equals(R3) : ${R1.equals(R3)}`);
+    console.log(`R3.isWhole() : ${R3.isWhole()}`);
+    console.log(`R3.isDecimal() : ${R3.isDecimal()}`);
+    console.log();
 
-// 測試 parseRational 方法（需要自己實現該方法，這裡暫不提供）
+    console.log(`R4 : ${R4.toString()}`);
+    console.log(`R5 : ${R5.toString()}`);
+};
+
+main();
