@@ -4,8 +4,13 @@
   "description": "113(上)網路程式設計",
   "main": "tkuim.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "ts-node Rational.test.ts"  
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.0.0",  
+    "typescript": "^4.0.0"  
+  }
 }
